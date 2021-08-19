@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part two of Ex3</title>
+    <link href="exp32.css" rel ="stylesheet" type="text/css">
+    <style>
+
+        body{
+            background-image:url("exp3.png");
+        }
+        #head1{
+          border:3px outset white;
+          color:navajowhite;
+          margin-left:150mm;
+          margin-right:130mm;
+          
+        }
+
+        h2{
+            color:white;
+            font-family:cursive;
+        }
+        .selector{
+            color:yellow;
+            font-family:serif;
+            font-size:5mm;
+        }
+        #id1{
+            color:yellow;
+            font-family:serif;
+            font-size:5mm;
+        }
+        #head3{
+            color:yellow;
+            font-family:serif;
+            font-size:5mm;
+            
+        }
+        #head4{
+            color:yellow;
+            font-family:serif;
+            font-size:5mm;
+
+        }
+        #head5{
+            color:yellow;
+            font-family:serif;
+            font-size:5mm;
+        }
+        #head6{
+            color:yellow;
+            font-family:serif;
+            font-size:5mm;
+        }
+        #span1{
+            color:white;
+            font-family:serif;
+            font-size:5mm;
+
+           
+        }
+        ol{
+            color:yellow;
+            font-family:serif;
+            font-size:7mm;
+            margin-left:20mm;
+        }
+         /*PSEUDO CLASS*/
+         a:link{
+
+            background-color:chartreuse;
+         }
+         p:lang(it) { 
+            background:lightcyan;
+            color:red;
+         }
+         
+         
+         p2 {
+              display: none;
+              background-color: yellow;
+              padding: 20px;
+            }
+
+        div:hover p2 {
+              display: block;
+            }
+
+        a:active {
+            background-color: yellow;
+        }
+        input:focus{
+            background-color:pink;
+
+        }
+        .fchild p:first-child{
+            color:pink;
+        }
+        .fchild p:last-child{
+            color:turquoise;
+        }
+
+        /*PSUEDO ELEMENTS*/
+        #firstLine::first-line {
+          color:powderblue;
+         font-variant: small-caps;
+        }
+        #befor1 p::before{
+        content:"Before Text";
+        color:springgreen;
+        }
+        #after1 p::after{
+            content:"After Text";
+            color:springgreen;
+        }
+        #firstLetter p::first-letter{
+            color:powderblue;
+            font-variant:small-caps;
+        }
+        #selection1 p::selection{
+            background-color:grey;
+            color:salmon;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="head1">Ismail Khans Web Page 2 </h1>
+
+    <h2>SELECTOR USING CLASS</h2>
+
+        <p class="selector">This is a paragraph2 and this paragraph color wil be changed <br>
+              along with other paragragh2 color together by use of selector type class</p>
+        <p class="selector">This is a paragraph2 and this paragraph  color wil be changed along <br>
+             with other paragragh1 color together by use of selector type class</p>
+
+    <h2>SELECTORS USING ID FOR ELEMENTS(SPAN,H1-H6,P)</h2>
+
+        <div id="id1">
+            <p>This is using id and hence can be used once only </p>
+        </div>
+         
+             <h3 id="head3">This is Third HEADING</h3>
+             <h4 id="head4">This is Fourth HEADING</h4>
+             <h5 id="head5">This is Fifth HEADING</h5>
+             <h6 id="head6">This is Last HEADING</h6>
+
+                  <p id="span1"><span><b>BOLD SPAN ID</b></span></p>
+
+     <h2>PSEPUDO CLASS</h2>
+
+        <ol>
+            <li>link</li>
+            <a href="https://mhssce.ac.in">My College</a>
+            <a href="http://www.wikipedia.org">Wikipedia</a>
+
+            <p><b>Note:</b> The :link selector style links to pages you have not visited yet.</p>
+
+            <li>Lang()</li>
+                 
+                 <p>I live in Mumbai.</p>
+                 <p lang="it">Selects and styles every paragraph element with attribute lang=it</p>
+
+            <li>Hover</li>
+                
+                 <div>Hover over me to show the p element
+                       <p2 style="color:black;">Tada! Here I am!</p2>
+                 </div>
+                 <br>
+           
+            <li>active</li>
+
+            <a href="https://mhssce.ac.in">My College</a>
+            <a href="http://www.wikipedia.org">wikipedia.org</a>
+            
+            <p><b>Note:</b> The :active selector styles the active link.</p>
+            <br>
+
+            <li>focus</li>
+
+                <p>Click inside the text fields to see a yellow background:</p>
+
+                     <form>
+                          <label for="fname" style="color:honeydew;">FirstName:</label>
+                          <input type="text" name="firstname"><br>
+                          <label for="lname" style="color:honeydew;">LastName:</label>
+                          <input type="text" name="lastname">
+                     </form>
+            <br>
+            <li>**First Child**</li>
+
+               <div class="fchild">
+                   <p>First Child</p>
+                   <p>Second Child</p>
+               </div>            
+                
+        </ol>
+
+        <br>
+
+        <h2>PSEUDO ELEMENTS</h2>
+
+            <ol>
+                <li>Before</li>
+                   <div id="befor1">
+                       <p style ="">A Text Before The content</p>
+                   </div>
+                
+                <br>
+                <li>After</li>
+                <div id="after1">
+                    <p>There is text after this paragraph </p>
+                </div>
+                <br>
+                <li>First Line</li>
+
+                <div id="firstLine">
+                    <p>You can use the ::first-line pseudo-element to add a special effect to the first 
+                        line of a text. Some more text. And even more, and more, and more, and more, 
+                        and more, and more, and more, and more, and more, and more, and more, and more.</p>
+                  </div>      
+        
+                <br>
+                <li>First Letter</li>
+                <div id="firstLetter">
+                    <p>This is selected.The first Letter of this paragraph is selected</p>
+                </div>
+                <br>
+
+                <li>Selection</li>
+                   <div id="selection1">
+                       <p>The text of selection</p>
+                   </div>
+            </ol>
+          
+</body>
+</html>
