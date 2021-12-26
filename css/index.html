@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href = "style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h2>Calculator</h2>
+<div class='container'>
+ <form  name = "form" class = "calculator" action = "index.html" method = "post">
+    <div class="test">
+        <input type = "text"  name = "answer1" class = "text-field" >
+    
+    <br>
+    
+        <input type = "button" class= "op1" value = "c" onclick="form.answer1.value=''">
+        <input type = "button" class = "op1" value = "<" onclick = "form.answer1.value=form.answer1.value.substring(0,form.answer1.value.length*1-1)">
+        <input type = "button" class = "op1" value = "00">
+        <input type = "button" class = "op1" value = "/">
+        
+        <br>
+
+    
+        <input type = "button"  class = "bt2" value = "7" onclick = "form.answer1.value+= '7'">
+        <input type = "button" class = "bt2" value = "8" onclick="form.answer1.value+='8'">
+        <input type = "button" class = "bt2" value = "9" onclick="form.answer1.value+='9'">
+        <input type = "button" class = "bt2" value = "*" onclick="form.answer1.value+='*'">
+        
+        <br>
+        <input type = "button" class = "bt2" value = "4" onclick="form.answer1.value+='4'">
+        <input type = "button" class = "bt2" value = "5" onclick="form.answer1.value+='5'">
+        <input type = "button" class = "bt2" value = "6" onclick="form.answer1.value+='6'">
+        <input type = "button" class = "bt2" value = "-" onclick="form.answer1.value+='-'">
+        
+        <br>
+        <input type = "button" class = "bt2" value = "1" onclick="form.answer1.value+='1'">
+        <input type = "button" class = "bt2" value = "2" onclick="form.answer1.value+='2'">
+        <input type = "button" class = "bt2" value = "3" onclick="form.answer1.value+='3'">
+        <input type = "button" class = "bt2" value = "+" onclick="form.answer1.value+='+'">
+
+        <br>
+
+        <input type = "button" class = "button bt2" value = "0" onclick="form.answer1.value+='8'">
+        <input type = "button" class = "bt2" value = "." onclick="form.answer1.value+='.'">
+        <input type = "button" class = "bt2" value = "=" onclick="form.answer1.value=eval(form.answer1.value)">
+        
+        
+    </div>
+    </form>
+    </div>
+</body>
+</html>
