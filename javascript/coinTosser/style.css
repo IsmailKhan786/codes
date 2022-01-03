@@ -1,0 +1,37 @@
+body{
+    background-color: gray;
+    text-align: center;
+}
+.head1,.head2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.head2:hover{
+    color:white;    
+}
+p{
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.player1{
+    position: relative;
+    right:200px;
+}
+.player2{
+    position: relative;
+    left:150px;
+    bottom:325px;
+}
+button{
+    background-color:violet;
+    padding:0 20px ;
+    border-radius: 100px;
+}
